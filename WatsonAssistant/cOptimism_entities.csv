@@ -1,0 +1,66 @@
+answers,yes
+answers,no
+close_days,Holiday Open,Open on Holidays
+close_days,Weekend Open,"Open on Saturday, Open on Sunday"
+close_days,Holiday Close,Closed on Holidays
+close_days,Weekend Close,"Close on Saturday, Close on Sunday"
+custDelivery,Dont want delivery
+custDelivery,I want delivery
+deliveryProvider,Bluedart,blue dart
+deliveryProvider,Delivery Hub
+deliveryProvider,Fedex
+deliveryProvider,India Post
+deliveryProvider,eCom Express
+freshness,Fresh,Recently Arrived
+freshness,Stale,Nearing Expiry
+location,Vancouver,burnaby
+location,Toronto,Warden Avenue
+location,Montreal
+location,Calgary
+occasion,Weekend,"Saturday, Sunday"
+occasion,Christmas,December 25,Dec 25,December 25th,Yule
+occasion,holiday,"Divali, Dusera, Eid, Ramzan, Good Friday, Easter"
+relationship,boyfriend,beau
+relationship,husband
+relationship,wife
+relationship,partner
+relationship,couple
+relationship,friend,trainer,professor,companion,bestie,roommate,neighbor,teacher,coach,colleague,associate,acquaintance,BFF
+relationship,relative,step,cousin,aunt,uncle,granny,grannie,grandpa,grandma,brother,sister
+relationship,girlfriend,fiancee,GF
+relationship,father,pops,daddy,dad
+relationship,mother,mama,momsie,mommy,mum,mom
+spacious,Very Crowded
+spacious,Follows Social Distancing
+spacious,Does not follow Social Distancing
+spacious,very spacious
+spacious,Crowded
+spacious,Free
+spacious,Relatively free
+spacious,Hardly spacious
+spacious,spacious
+stocked,Running Out,Low on stoked
+stocked,Stocked,Well Stocked
+store_close_dt,Store Closed Till
+store_close_dt,Store Close Date
+Store_close_time,Store Close Time,"closes at 2 PM, closes at 3 PM, closes at 4 PM, closes at 5 PM"
+store_items,Non Veg,"Fish, Meat, Eggs"
+store_items,Grocery Items,"Vegetables, Fruits, Dal"
+store_items,Dairy,"Milk Products, Curd, Milk, Cheese"
+store_name,Medplus
+store_name,Vijaya Diary
+store_name,Dmart
+store_name,Vijetha
+store_name,More
+store_name,Reliance Fresh
+store_name,Heritage
+store_name,Appolo
+store_open_dt_en,Close Date
+store_open_dt_en,Open Date
+store_open_en,Open,"Open, Opening, Opening soon, Open at, will open at"
+store_open_en,Close,"Close, Closing, Closing soon, Closing at, will close at"
+store_open_time,Store Open Time,"opens at 8 AM, opens at 9 AM, opens at 10 AM"
+store_type,Grocery,"Departmental Store, Kirana Store"
+store_type,Food,"Restaurant, Hotel, Mess"
+store_type,Medicine,"Medicine Store, Medical Store"
+store_type,Bakery,"Cake shop, Bread Shop, Cake Store"

@@ -1,0 +1,62 @@
+I am customer,customer
+I am looking for stores,customer
+I am looking for groceries,customer
+I am looking for medicine,customer
+I want to contribute,customerContribute
+I want to provide store info,customerContribute
+I want to share info,customerContribute
+I dont want door delivery.,customerDelivery
+I want door delivery.,customerDelivery
+I want medicines,customerGetStoreData
+I want store info,customerGetStoreData
+I want groceries,customerGetStoreData
+i want medicens,customerGetStoreData
+c ya,goodbyes
+see you,goodbyes
+bye,goodbyes
+good bye,goodbyes
+talk to you soon,goodbyes
+Hey,greetings
+hello,greetings
+Hi,greetings
+kia ora,greetings
+good afternoon,greetings
+good morning,greetings
+When are you open,hours_info
+What are your hours of operation?,hours_info
+what are the hours of operation for your Montreal store,hours_info
+What time are you open until?,hours_info
+Are you open on Saturdays?,hours_info
+When do you open,hours_info
+What days are you closed on?,hours_info
+When do you close,hours_info
+Are you open on Christmas' Day?,hours_info
+what are you hours of operation in Toronto,hours_info
+Are you open on Sundays?,hours_info
+What are your hours?,hours_info
+What are your locations?,location_info
+List of location,location_info
+what's the address of your Vancouver store?,location_info
+locations in America,location_info
+Locations in Canada,location_info
+Give me a list of locations,location_info
+do you have a Store shop in Montreal,location_info
+What's the address of your Toronto store?,location_info
+where is your Toronto store?,location_info
+list of your locations,location_info
+Where are your stores?,location_info
+Where are you physically located?,location_info
+What time does the store open,store_open
+Is store open,store_open
+I am store owner,store_owner
+opens at 8 AM,store_owner
+Stores for grocery,Store_recommendations
+Which store for grocery?,Store_recommendations
+Grocery suggestions nearest to me,Store_recommendations
+Store recommendations,Store_recommendations
+Store suggestions,Store_recommendations
+thanks,thank_you
+thank you,thank_you
+appreciate it,thank_you
+cheers,thank_you
+thx,thank_you
