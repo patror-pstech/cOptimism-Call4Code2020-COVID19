@@ -1,0 +1,5025 @@
+{
+  "intents": [
+    {
+      "intent": "store_open",
+      "examples": [
+        {
+          "text": "What time does the store open"
+        },
+        {
+          "text": "Is store open"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "customerGetStoreData",
+      "examples": [
+        {
+          "text": "I want medicines"
+        },
+        {
+          "text": "I want store info"
+        },
+        {
+          "text": "I want groceries"
+        },
+        {
+          "text": "i want medicens"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "thank_you",
+      "examples": [
+        {
+          "text": "thank you"
+        },
+        {
+          "text": "appreciate it"
+        },
+        {
+          "text": "cheers"
+        },
+        {
+          "text": "thx"
+        },
+        {
+          "text": "thanks"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "customerDelivery",
+      "examples": [
+        {
+          "text": "I want door delivery."
+        },
+        {
+          "text": "I dont want door delivery."
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "customerContribute",
+      "examples": [
+        {
+          "text": "I want to provide store info"
+        },
+        {
+          "text": "I want to contribute"
+        },
+        {
+          "text": "I want to share info"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Store_recommendations",
+      "examples": [
+        {
+          "text": "Store suggestions"
+        },
+        {
+          "text": "Which store for grocery?"
+        },
+        {
+          "text": "Grocery suggestions nearest to me"
+        },
+        {
+          "text": "Store recommendations"
+        },
+        {
+          "text": "Stores for grocery"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "location_info",
+      "examples": [
+        {
+          "text": "do you have a Store shop in Montreal"
+        },
+        {
+          "text": "List of location"
+        },
+        {
+          "text": "what's the address of your Vancouver store?"
+        },
+        {
+          "text": "locations in America"
+        },
+        {
+          "text": "Locations in Canada"
+        },
+        {
+          "text": "Give me a list of locations"
+        },
+        {
+          "text": "Where are you physically located?"
+        },
+        {
+          "text": "Where are your stores?"
+        },
+        {
+          "text": "list of your locations"
+        },
+        {
+          "text": "where is your Toronto store?"
+        },
+        {
+          "text": "What's the address of your Toronto store?"
+        },
+        {
+          "text": "What are your locations?"
+        }
+      ]
+    },
+    {
+      "intent": "greetings",
+      "examples": [
+        {
+          "text": "Hi"
+        },
+        {
+          "text": "kia ora"
+        },
+        {
+          "text": "good afternoon"
+        },
+        {
+          "text": "good morning"
+        },
+        {
+          "text": "Hey"
+        },
+        {
+          "text": "hello"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "store_owner",
+      "examples": [
+        {
+          "text": "opens at 8 AM"
+        },
+        {
+          "text": "I am store owner"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "goodbyes",
+      "examples": [
+        {
+          "text": "talk to you soon"
+        },
+        {
+          "text": "see you"
+        },
+        {
+          "text": "good bye"
+        },
+        {
+          "text": "bye"
+        },
+        {
+          "text": "c ya"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "hours_info",
+      "examples": [
+        {
+          "text": "What are your hours?"
+        },
+        {
+          "text": "What time are you open until?"
+        },
+        {
+          "text": "Are you open on Saturdays?"
+        },
+        {
+          "text": "What are your hours of operation?"
+        },
+        {
+          "text": "what are the hours of operation for your Montreal store"
+        },
+        {
+          "text": "When do you open"
+        },
+        {
+          "text": "When are you open"
+        },
+        {
+          "text": "What days are you closed on?"
+        },
+        {
+          "text": "When do you close"
+        },
+        {
+          "text": "Are you open on Christmas' Day?"
+        },
+        {
+          "text": "what are you hours of operation in Toronto"
+        },
+        {
+          "text": "Are you open on Sundays?"
+        }
+      ]
+    },
+    {
+      "intent": "customer",
+      "examples": [
+        {
+          "text": "I am looking for medicine"
+        },
+        {
+          "text": "I am looking for groceries"
+        },
+        {
+          "text": "I am looking for stores"
+        },
+        {
+          "text": "I am customer"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "stocked",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Running Out",
+          "synonyms": [
+            "Low on stoked"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Stocked",
+          "synonyms": [
+            "Well Stocked"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "store_open_dt_en",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Open Date",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Close Date",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "store_open_time",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Store Open Time",
+          "synonyms": [
+            "opens at 8 AM, opens at 9 AM, opens at 10 AM"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "store_name",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Medplus",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Vijetha",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Vijaya Diary",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Dmart",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Appolo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Heritage",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Reliance Fresh",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "More",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "relationship",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "girlfriend",
+          "synonyms": [
+            "fiancee",
+            "GF"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "relative",
+          "synonyms": [
+            "step",
+            "cousin",
+            "aunt",
+            "uncle",
+            "granny",
+            "grannie",
+            "grandpa",
+            "grandma",
+            "brother",
+            "sister"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "friend",
+          "synonyms": [
+            "trainer",
+            "professor",
+            "companion",
+            "bestie",
+            "roommate",
+            "neighbor",
+            "teacher",
+            "coach",
+            "colleague",
+            "associate",
+            "acquaintance",
+            "BFF"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "couple",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "partner",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "wife",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "husband",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "boyfriend",
+          "synonyms": [
+            "beau"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "mother",
+          "synonyms": [
+            "mama",
+            "momsie",
+            "mommy",
+            "mum",
+            "mom"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "father",
+          "synonyms": [
+            "pops",
+            "daddy",
+            "dad"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "custDelivery",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "I want delivery",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Dont want delivery",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "store_close_dt",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Store Closed Till",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Store Close Date",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "freshness",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Stale",
+          "synonyms": [
+            "Nearing Expiry"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Fresh",
+          "synonyms": [
+            "Recently Arrived"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-person",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "answers",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "no",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "yes",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "close_days",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Weekend Close",
+          "synonyms": [
+            "Close on Saturday, Close on Sunday"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Weekend Open",
+          "synonyms": [
+            "Open on Saturday, Open on Sunday"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Holiday Close",
+          "synonyms": [
+            "Closed on Holidays"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Holiday Open",
+          "synonyms": [
+            "Open on Holidays"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "deliveryProvider",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Delivery Hub",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Fedex",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "eCom Express",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Bluedart",
+          "synonyms": [
+            "blue dart"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "India Post",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "store_open_en",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Open",
+          "synonyms": [
+            "Open, Opening, Opening soon, Open at, will open at"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Close",
+          "synonyms": [
+            "Close, Closing, Closing soon, Closing at, will close at"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-location",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "location",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Montreal",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Vancouver",
+          "synonyms": [
+            "burnaby"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Toronto",
+          "synonyms": [
+            "Warden Avenue"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Calgary",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "store_type",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Food",
+          "synonyms": [
+            "Restaurant, Hotel, Mess"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Medicine",
+          "synonyms": [
+            "Medicine Store, Medical Store"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bakery",
+          "synonyms": [
+            "Cake shop, Bread Shop, Cake Store"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Grocery",
+          "synonyms": [
+            "Departmental Store, Kirana Store"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "spacious",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Relatively free",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Free",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Crowded",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Does not follow Social Distancing",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Follows Social Distancing",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "very spacious",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "spacious",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Very Crowded",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Hardly spacious",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Store_close_time",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Store Close Time",
+          "synonyms": [
+            "closes at 2 PM, closes at 3 PM, closes at 4 PM, closes at 5 PM"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "occasion",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "holiday",
+          "synonyms": [
+            "Divali, Dusera, Eid, Ramzan, Good Friday, Easter"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Christmas",
+          "synonyms": [
+            "December 25",
+            "Dec 25",
+            "December 25th",
+            "Yule"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Weekend",
+          "synonyms": [
+            "Saturday, Sunday"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "store_items",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Grocery Items",
+          "synonyms": [
+            "Vegetables, Fruits, Dal"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Non Veg",
+          "synonyms": [
+            "Fish, Meat, Eggs"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Dairy",
+          "synonyms": [
+            "Milk Products, Curd, Milk, Cheese"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "https://us-south.functions.cloud.ibm.com/api/v1/web/tabish.aftab%40capgemini.com_dev/default/getdata.json",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What time do you open?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_187_1587975870874",
+      "event_name": "focus",
+      "dialog_node": "handler_189_1587975870874",
+      "previous_sibling": "handler_188_1587975870874"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_187_1587975870874",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_190_1587975870874",
+      "previous_sibling": "handler_189_1587975870874"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_187_1587975870874",
+      "context": {
+        "store_open_time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_188_1587975870874"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Are they fresh?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_236_1587975892240",
+      "event_name": "focus",
+      "dialog_node": "handler_238_1587975892240",
+      "previous_sibling": "handler_237_1587975892240"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_236_1587975892240",
+      "context": {
+        "freshness": "@freshness"
+      },
+      "conditions": "@freshness",
+      "event_name": "input",
+      "dialog_node": "handler_237_1587975892240"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1587962822271",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_5_1587964419055",
+      "previous_sibling": "handler_4_1587962822274"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What time do you open?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_4_1587962822271",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1587962822274",
+      "previous_sibling": "handler_1_1587962822274"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1587962822271",
+      "context": {
+        "store_open_time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_1_1587962822274"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1587962893136",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_6_1587964380365",
+      "previous_sibling": "handler_1_1587962893139"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What time do you close?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1587962893136",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1587962893139",
+      "previous_sibling": "handler_3_1587962893139"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1587962893136",
+      "context": {
+        "Store_close_time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_3_1587962893139"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What date do you want to go?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_41_1587974103709",
+      "event_name": "focus",
+      "dialog_node": "handler_43_1587974103709",
+      "previous_sibling": "handler_42_1587974103709"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_41_1587974103709",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_44_1587974103709",
+      "previous_sibling": "handler_43_1587974103709"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_41_1587974103709",
+      "context": {
+        "cusStoreVisitBack": "@sys-date"
+      },
+      "conditions": "@sys-date",
+      "event_name": "input",
+      "dialog_node": "handler_42_1587974103709"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Is your business open?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_3_1587962524161",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1587962524161",
+      "previous_sibling": "handler_4_1587962524161"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1587962524161",
+      "context": {
+        "store_open_en": "@store_open_en"
+      },
+      "conditions": "@store_open_en",
+      "event_name": "input",
+      "dialog_node": "handler_4_1587962524161"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Which store did you visit?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_2_1587970809625",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1587970809625",
+      "previous_sibling": "handler_3_1587970809625"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1587970809625",
+      "context": {
+        "store_name": "@store_name"
+      },
+      "conditions": "@store_name",
+      "event_name": "input",
+      "dialog_node": "handler_3_1587970809625"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Are they fresh?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1587963033840",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1587963033843",
+      "previous_sibling": "handler_3_1587963033843"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1587963033840",
+      "context": {
+        "freshness": "@freshness"
+      },
+      "conditions": "@freshness",
+      "event_name": "input",
+      "dialog_node": "handler_3_1587963033843"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_89_1587975788964",
+      "variable": "$store_type",
+      "dialog_node": "slot_106_1587975788968",
+      "previous_sibling": "slot_102_1587975788968"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_89_1587975788964",
+      "variable": "$store_open_time",
+      "dialog_node": "slot_94_1587975788968",
+      "previous_sibling": "slot_91_1587975788968"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_89_1587975788964",
+      "variable": "$occasion",
+      "dialog_node": "slot_102_1587975788968",
+      "previous_sibling": "slot_98_1587975788968"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_89_1587975788964",
+      "dialog_node": "response_119_1587975788968",
+      "previous_sibling": "node_90_1587975788968"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_89_1587975788964",
+      "event_name": "focus",
+      "dialog_node": "handler_118_1587975788968",
+      "previous_sibling": "response_119_1587975788968"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_89_1587975788964",
+      "variable": "$stocked",
+      "dialog_node": "slot_115_1587975788968",
+      "previous_sibling": "slot_112_1587975788968"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_89_1587975788964",
+      "variable": "$freshness",
+      "dialog_node": "slot_112_1587975788968",
+      "previous_sibling": "slot_109_1587975788968"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_89_1587975788964",
+      "variable": "$store_open_en",
+      "dialog_node": "slot_91_1587975788968",
+      "previous_sibling": "handler_118_1587975788968"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_89_1587975788964",
+      "variable": "$store_items",
+      "dialog_node": "slot_109_1587975788968",
+      "previous_sibling": "slot_106_1587975788968"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_89_1587975788964",
+      "variable": "$Store_close_time",
+      "dialog_node": "slot_98_1587975788968",
+      "previous_sibling": "slot_94_1587975788968"
+    },
+    {
+      "type": "standard",
+      "title": "deliveryThanks",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks for Contributing. Have a nice day."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_89_1587975788964",
+      "dialog_node": "node_90_1587975788968"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_102_1587975788968",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_105_1587975788968",
+      "previous_sibling": "handler_104_1587975788968"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Are you open on weekends?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_102_1587975788968",
+      "event_name": "focus",
+      "dialog_node": "handler_104_1587975788968",
+      "previous_sibling": "handler_103_1587975788968"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_102_1587975788968",
+      "context": {
+        "occasion": "@store_close_dt"
+      },
+      "conditions": "@store_close_dt",
+      "event_name": "input",
+      "dialog_node": "handler_103_1587975788968"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Is your business open?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_153_1587975842666",
+      "event_name": "focus",
+      "dialog_node": "handler_155_1587975842666",
+      "previous_sibling": "handler_154_1587975842666"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_153_1587975842666",
+      "context": {
+        "store_open_en": "@store_open_en"
+      },
+      "conditions": "@store_open_en",
+      "event_name": "input",
+      "dialog_node": "handler_154_1587975842666"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1587970809625",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_12_1587970809625",
+      "previous_sibling": "handler_11_1587970809625"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What time did you come back?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1587970809625",
+      "event_name": "focus",
+      "dialog_node": "handler_11_1587970809625",
+      "previous_sibling": "handler_10_1587970809625"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1587970809625",
+      "context": {
+        "cusStoreVisitBack": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_10_1587970809625"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Are they fresh?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_23_1587970809625",
+      "event_name": "focus",
+      "dialog_node": "handler_25_1587970809625",
+      "previous_sibling": "handler_24_1587970809625"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_23_1587970809625",
+      "context": {
+        "freshness": "@freshness"
+      },
+      "conditions": "@freshness",
+      "event_name": "input",
+      "dialog_node": "handler_24_1587970809625"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What time do you close?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_129_1587975808112",
+      "event_name": "focus",
+      "dialog_node": "handler_131_1587975808112",
+      "previous_sibling": "handler_130_1587975808112"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_129_1587975808112",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_132_1587975808112",
+      "previous_sibling": "handler_131_1587975808112"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_129_1587975808112",
+      "context": {
+        "Store_close_time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_130_1587975808112"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Our Montreal store is open Monday to Friday, 10 am to 5 pm, except statutory holidays."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1575175126830",
+      "conditions": "$city:Montreal",
+      "dialog_node": "response_1_1576094534684",
+      "previous_sibling": "response_6_1576094520980"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1575175126830",
+      "variable": "$city",
+      "dialog_node": "slot_5_1576087730529",
+      "previous_sibling": "response_6_1576096151862"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Unfortunately, we don’t have a store in @sys-location. 🙁 To date, we have stores in Toronto, Montreal, Calgary, and Vancouver."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1575175126830",
+      "conditions": "@sys-location",
+      "dialog_node": "response_6_1576095833465",
+      "previous_sibling": "response_2_1576094538312"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Our hours of operations are listed on <a href=\"https://example.org/hours/\">our Hours page</a>."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1575175126830",
+      "conditions": "true",
+      "dialog_node": "response_6_1576096151862",
+      "previous_sibling": "response_6_1576095833465"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Our Calgary store is open Monday to Saturday, 9 am to 6 pm, every day except on Christmas."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1575175126830",
+      "conditions": "$city:Calgary",
+      "dialog_node": "response_6_1576094536726",
+      "previous_sibling": "response_1_1576094534684"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Our Vancouver store is open everyday, 8 am to 5 pm, except during statutory holidays."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1575175126830",
+      "conditions": "$city:Vancouver",
+      "dialog_node": "response_2_1576094538312",
+      "previous_sibling": "response_6_1576094536726"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Our Toronto store is open Monday to Saturday from 9 am until 6 pm, except statutory holidays."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1575175126830",
+      "conditions": "$city:Toronto",
+      "dialog_node": "response_6_1576094520980"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What items do you have in your store?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_20_1587967613186",
+      "event_name": "focus",
+      "dialog_node": "handler_22_1587967613186",
+      "previous_sibling": "handler_21_1587967613186"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_20_1587967613186",
+      "context": {
+        "store_items": "@store_items"
+      },
+      "conditions": "@store_items",
+      "event_name": "input",
+      "dialog_node": "handler_21_1587967613186"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Is your business open?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_91_1587975788968",
+      "event_name": "focus",
+      "dialog_node": "handler_93_1587975788968",
+      "previous_sibling": "handler_92_1587975788968"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_91_1587975788968",
+      "context": {
+        "store_open_en": "@store_open_en"
+      },
+      "conditions": "@store_open_en",
+      "event_name": "input",
+      "dialog_node": "handler_92_1587975788968"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Are they fresh?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_174_1587975842667",
+      "event_name": "focus",
+      "dialog_node": "handler_176_1587975842667",
+      "previous_sibling": "handler_175_1587975842667"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_174_1587975842667",
+      "context": {
+        "freshness": "@freshness"
+      },
+      "conditions": "@freshness",
+      "event_name": "input",
+      "dialog_node": "handler_175_1587975842667"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What time do you close?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_191_1587975870874",
+      "event_name": "focus",
+      "dialog_node": "handler_193_1587975870874",
+      "previous_sibling": "handler_192_1587975870874"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_191_1587975870874",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_194_1587975870874",
+      "previous_sibling": "handler_193_1587975870874"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_191_1587975870874",
+      "context": {
+        "Store_close_time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_192_1587975870874"
+    },
+    {
+      "type": "standard",
+      "title": "Collect Other Names",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Nice to meet you, $name.  Are you a Store Owner, Customer, Delivery Associate, Covid Vulnerable?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "context": {
+        "name": "<? input.text.substring(0, 1).toUpperCase() + input.text.substring(1) ?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_6_1576022052287",
+      "previous_sibling": "node_10_1576021193879"
+    },
+    {
+      "type": "standard",
+      "title": "Collect Sys-Person Name",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Nice to meet you, $name. Are you a Store Owner, Customer, Delivery Associate, Covid Vulnerable?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "context": {
+        "name": "@sys-person"
+      },
+      "conditions": "@sys-person",
+      "dialog_node": "node_10_1576021193879"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What is your business?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1587962973653",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1587962973658",
+      "previous_sibling": "handler_3_1587962973658"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1587962973653",
+      "context": {
+        "store_type": "@store_type"
+      },
+      "conditions": "@store_type",
+      "event_name": "input",
+      "dialog_node": "handler_3_1587962973658"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What time do you close?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1587967613186",
+      "event_name": "focus",
+      "dialog_node": "handler_11_1587967613186",
+      "previous_sibling": "handler_10_1587967613186"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1587967613186",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_12_1587967613186",
+      "previous_sibling": "handler_11_1587967613186"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1587967613186",
+      "context": {
+        "Store_close_time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_10_1587967613186"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Do you want door delivery?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1587975232872",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1587975232874",
+      "previous_sibling": "handler_6_1587975232874"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1587975232872",
+      "context": {
+        "customerDelivery": "#customerDelivery"
+      },
+      "conditions": "#customerDelivery",
+      "event_name": "input",
+      "dialog_node": "handler_6_1587975232874"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1587967613179",
+      "event_name": "focus",
+      "dialog_node": "handler_29_1587967613186",
+      "previous_sibling": "response_6_1588052116947"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1587967613179",
+      "variable": "$freshness",
+      "dialog_node": "slot_23_1587967613186",
+      "previous_sibling": "slot_20_1587967613186"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1587967613179",
+      "variable": "$occasion",
+      "dialog_node": "slot_13_1587967613186",
+      "previous_sibling": "slot_9_1587967613186"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1587967613179",
+      "variable": "$store_open_time",
+      "dialog_node": "slot_5_1587967613186",
+      "previous_sibling": "slot_2_1587967613186"
+    },
+    {
+      "type": "response_condition",
+      "parent": "node_1_1587967613179",
+      "conditions": "anything_else",
+      "dialog_node": "response_6_1588052116947",
+      "previous_sibling": "response_30_1587967613186"
+    },
+    {
+      "type": "frame",
+      "title": "Customer Get Store Data",
+      "output": {},
+      "parent": "node_1_1587967613179",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#customerGetStoreData",
+      "dialog_node": "node_33_1587974103706",
+      "previous_sibling": "node_1_1587970809622"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1587967613179",
+      "variable": "$Store_close_time",
+      "dialog_node": "slot_9_1587967613186",
+      "previous_sibling": "slot_5_1587967613186"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1587967613179",
+      "variable": "$store_open_en",
+      "dialog_node": "slot_2_1587967613186",
+      "previous_sibling": "handler_29_1587967613186"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1587967613179",
+      "variable": "$stocked",
+      "dialog_node": "slot_26_1587967613186",
+      "previous_sibling": "slot_23_1587967613186"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Do you want to contribute or seek information?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1587967613179",
+      "dialog_node": "response_30_1587967613186",
+      "previous_sibling": "node_33_1587974103706"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1587967613179",
+      "variable": "$store_type",
+      "dialog_node": "slot_17_1587967613186",
+      "previous_sibling": "slot_13_1587967613186"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1587967613179",
+      "variable": "$store_items",
+      "dialog_node": "slot_20_1587967613186",
+      "previous_sibling": "slot_17_1587967613186"
+    },
+    {
+      "type": "frame",
+      "title": "Customer Contribute",
+      "output": {},
+      "parent": "node_1_1587967613179",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#customerContribute",
+      "dialog_node": "node_1_1587970809622"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_7_1576084301816",
+      "variable": "$occasion",
+      "dialog_node": "slot_3_1576084344160",
+      "previous_sibling": "response_5_1576085308299"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Opt for door delivery/nearest store."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1576084301816",
+      "conditions": "$occasion:Birthday",
+      "dialog_node": "response_7_1576085131927",
+      "previous_sibling": "response_9_1576084953478"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I'd recommend a beautiful mixed bouquet from <a href=\"https://example.org/catalog\">our catalog</a>."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1576084301816",
+      "conditions": "true",
+      "dialog_node": "response_5_1576085308299",
+      "previous_sibling": "response_3_1576085232660"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You can never go wrong with a dozen red roses."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1576084301816",
+      "conditions": "$occasion == \"Valentine's Day\"",
+      "dialog_node": "response_9_1576085208775",
+      "previous_sibling": "response_7_1576085131927"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Moms are awesome and worth celebrating every day. Consider our <a href=\"https://example.org/mothers-day\">Mother's Day special bouquet</a>."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1576084301816",
+      "conditions": "$occasion == \"Mother's Day\"",
+      "dialog_node": "response_3_1576085232660",
+      "previous_sibling": "response_9_1576085208775"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I'd go with all-time classic: a beautiful Red Poinsettia."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1576084301816",
+      "conditions": "$occasion:Christmas",
+      "dialog_node": "response_9_1576084953478"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Are you well stocked?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_115_1587975788968",
+      "event_name": "focus",
+      "dialog_node": "handler_117_1587975788968",
+      "previous_sibling": "handler_116_1587975788968"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_115_1587975788968",
+      "context": {
+        "stocked": "@stocked"
+      },
+      "conditions": "@stocked",
+      "event_name": "input",
+      "dialog_node": "handler_116_1587975788968"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_182_1587975870870",
+      "variable": "$Store_close_time",
+      "dialog_node": "slot_191_1587975870874",
+      "previous_sibling": "slot_187_1587975870874"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_182_1587975870870",
+      "dialog_node": "response_212_1587975870874",
+      "previous_sibling": "node_183_1587975870874"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_182_1587975870870",
+      "variable": "$store_open_en",
+      "dialog_node": "slot_184_1587975870874",
+      "previous_sibling": "handler_211_1587975870874"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_182_1587975870870",
+      "variable": "$occasion",
+      "dialog_node": "slot_195_1587975870874",
+      "previous_sibling": "slot_191_1587975870874"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_182_1587975870870",
+      "variable": "$freshness",
+      "dialog_node": "slot_205_1587975870874",
+      "previous_sibling": "slot_202_1587975870874"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_182_1587975870870",
+      "variable": "$stocked",
+      "dialog_node": "slot_208_1587975870874",
+      "previous_sibling": "slot_205_1587975870874"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_182_1587975870870",
+      "variable": "$store_items",
+      "dialog_node": "slot_202_1587975870874",
+      "previous_sibling": "slot_199_1587975870874"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_182_1587975870870",
+      "variable": "$store_type",
+      "dialog_node": "slot_199_1587975870874",
+      "previous_sibling": "slot_195_1587975870874"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_182_1587975870870",
+      "event_name": "focus",
+      "dialog_node": "handler_211_1587975870874",
+      "previous_sibling": "response_212_1587975870874"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_182_1587975870870",
+      "variable": "$store_open_time",
+      "dialog_node": "slot_187_1587975870874",
+      "previous_sibling": "slot_184_1587975870874"
+    },
+    {
+      "type": "standard",
+      "title": "busThanks",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks for Contributing. Have a nice day."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_182_1587975870870",
+      "dialog_node": "node_183_1587975870874"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What items do you have in your store?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_202_1587975870874",
+      "event_name": "focus",
+      "dialog_node": "handler_204_1587975870874",
+      "previous_sibling": "handler_203_1587975870874"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_202_1587975870874",
+      "context": {
+        "store_items": "@store_items"
+      },
+      "conditions": "@store_items",
+      "event_name": "input",
+      "dialog_node": "handler_203_1587975870874"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Is your business open?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_215_1587975892240",
+      "event_name": "focus",
+      "dialog_node": "handler_217_1587975892240",
+      "previous_sibling": "handler_216_1587975892240"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_215_1587975892240",
+      "context": {
+        "store_open_en": "@store_open_en"
+      },
+      "conditions": "@store_open_en",
+      "event_name": "input",
+      "dialog_node": "handler_216_1587975892240"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Are they fresh?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_205_1587975870874",
+      "event_name": "focus",
+      "dialog_node": "handler_207_1587975870874",
+      "previous_sibling": "handler_206_1587975870874"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_205_1587975870874",
+      "context": {
+        "freshness": "@freshness"
+      },
+      "conditions": "@freshness",
+      "event_name": "input",
+      "dialog_node": "handler_206_1587975870874"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1576100284019",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1576100284019",
+      "previous_sibling": "handler_3_1576100284019"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1576100284019",
+      "context": {
+        "city": "@location"
+      },
+      "conditions": "@location",
+      "event_name": "input",
+      "dialog_node": "handler_3_1576100284019"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What items do you have in your store?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_171_1587975842667",
+      "event_name": "focus",
+      "dialog_node": "handler_173_1587975842667",
+      "previous_sibling": "handler_172_1587975842667"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_171_1587975842667",
+      "context": {
+        "store_items": "@store_items"
+      },
+      "conditions": "@store_items",
+      "event_name": "input",
+      "dialog_node": "handler_172_1587975842667"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_98_1587975788968",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_101_1587975788968",
+      "previous_sibling": "handler_100_1587975788968"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What time do you close?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_98_1587975788968",
+      "event_name": "focus",
+      "dialog_node": "handler_100_1587975788968",
+      "previous_sibling": "handler_99_1587975788968"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_98_1587975788968",
+      "context": {
+        "Store_close_time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_99_1587975788968"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Are you well stocked?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_208_1587975870874",
+      "event_name": "focus",
+      "dialog_node": "handler_210_1587975870874",
+      "previous_sibling": "handler_209_1587975870874"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_208_1587975870874",
+      "context": {
+        "stocked": "@stocked"
+      },
+      "conditions": "@stocked",
+      "event_name": "input",
+      "dialog_node": "handler_209_1587975870874"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Are you well stocked?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_146_1587975808112",
+      "event_name": "focus",
+      "dialog_node": "handler_148_1587975808112",
+      "previous_sibling": "handler_147_1587975808112"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_146_1587975808112",
+      "context": {
+        "stocked": "@stocked"
+      },
+      "conditions": "@stocked",
+      "event_name": "input",
+      "dialog_node": "handler_147_1587975808112"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Are you well stocked?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1587963052432",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1587963052434",
+      "previous_sibling": "handler_3_1587963052434"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1587963052432",
+      "context": {
+        "stocked": "@stocked"
+      },
+      "conditions": "@stocked",
+      "event_name": "input",
+      "dialog_node": "handler_3_1587963052434"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What is your business?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_199_1587975870874",
+      "event_name": "focus",
+      "dialog_node": "handler_201_1587975870874",
+      "previous_sibling": "handler_200_1587975870874"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_199_1587975870874",
+      "context": {
+        "store_type": "@store_type"
+      },
+      "conditions": "@store_type",
+      "event_name": "input",
+      "dialog_node": "handler_200_1587975870874"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Our Vancouver store is located at 4611 Canada Hwy in Burnaby."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1576100284015",
+      "conditions": "$city:Vancouver",
+      "dialog_node": "response_8_1576100284019",
+      "previous_sibling": "response_7_1576100284019"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Our store locations are listed on our site on the <a href=\"https://example.org/stores\">stores page</a>."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1576100284015",
+      "conditions": "true",
+      "dialog_node": "response_10_1576100284019",
+      "previous_sibling": "response_9_1576100284019"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Our Calgary store is located on the second floor of the Chinook Mall, near the Apple store."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1576100284015",
+      "conditions": "$city:Calgary",
+      "dialog_node": "response_7_1576100284019",
+      "previous_sibling": "response_6_1576100284019"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1576100284015",
+      "variable": "$city",
+      "dialog_node": "slot_2_1576100284019",
+      "previous_sibling": "response_10_1576100284019"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Unfortunately, we don’t have a store in @sys-location.🙁 To date, we have stores in Toronto, Montreal, Calgary, and Vancouver."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1576100284015",
+      "conditions": "@sys-location",
+      "dialog_node": "response_9_1576100284019",
+      "previous_sibling": "response_8_1576100284019"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Our Montreal store is located at 100 Main St."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1576100284015",
+      "conditions": "$city:Montreal",
+      "dialog_node": "response_6_1576100284019",
+      "previous_sibling": "response_5_1576100284019"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Our Toronto store is located at 123 Warden Avenue."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1576100284015",
+      "conditions": "$city:Toronto",
+      "dialog_node": "response_5_1576100284019"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1576087730529",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1576087730535",
+      "previous_sibling": "handler_10_1576087730535"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_5_1576087730529",
+      "context": {
+        "city": "@location"
+      },
+      "conditions": "@location",
+      "event_name": "input",
+      "dialog_node": "handler_10_1576087730535"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_156_1587975842666",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_159_1587975842666",
+      "previous_sibling": "handler_158_1587975842666"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What time do you open?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_156_1587975842666",
+      "event_name": "focus",
+      "dialog_node": "handler_158_1587975842666",
+      "previous_sibling": "handler_157_1587975842666"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_156_1587975842666",
+      "context": {
+        "store_open_time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_157_1587975842666"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Are you well stocked?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_177_1587975842667",
+      "event_name": "focus",
+      "dialog_node": "handler_179_1587975842667",
+      "previous_sibling": "handler_178_1587975842667"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_177_1587975842667",
+      "context": {
+        "stocked": "@stocked"
+      },
+      "conditions": "@stocked",
+      "event_name": "input",
+      "dialog_node": "handler_178_1587975842667"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Are you open on weekends?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_226_1587975892240",
+      "event_name": "focus",
+      "dialog_node": "handler_228_1587975892240",
+      "previous_sibling": "handler_227_1587975892240"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_226_1587975892240",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_229_1587975892240",
+      "previous_sibling": "handler_228_1587975892240"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_226_1587975892240",
+      "context": {
+        "occasion": "@store_close_dt"
+      },
+      "conditions": "@store_close_dt",
+      "event_name": "input",
+      "dialog_node": "handler_227_1587975892240"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_151_1587975842662",
+      "dialog_node": "response_181_1587975842667",
+      "previous_sibling": "node_152_1587975842666"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_151_1587975842662",
+      "variable": "$store_open_time",
+      "dialog_node": "slot_156_1587975842666",
+      "previous_sibling": "slot_153_1587975842666"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_151_1587975842662",
+      "variable": "$stocked",
+      "dialog_node": "slot_177_1587975842667",
+      "previous_sibling": "slot_174_1587975842667"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_151_1587975842662",
+      "variable": "$freshness",
+      "dialog_node": "slot_174_1587975842667",
+      "previous_sibling": "slot_171_1587975842667"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_151_1587975842662",
+      "variable": "$Store_close_time",
+      "dialog_node": "slot_160_1587975842666",
+      "previous_sibling": "slot_156_1587975842666"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_151_1587975842662",
+      "variable": "$store_open_en",
+      "dialog_node": "slot_153_1587975842666",
+      "previous_sibling": "handler_180_1587975842667"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_151_1587975842662",
+      "variable": "$store_type",
+      "dialog_node": "slot_168_1587975842666",
+      "previous_sibling": "slot_164_1587975842666"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_151_1587975842662",
+      "variable": "$occasion",
+      "dialog_node": "slot_164_1587975842666",
+      "previous_sibling": "slot_160_1587975842666"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_151_1587975842662",
+      "variable": "$store_items",
+      "dialog_node": "slot_171_1587975842667",
+      "previous_sibling": "slot_168_1587975842666"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_151_1587975842662",
+      "event_name": "focus",
+      "dialog_node": "handler_180_1587975842667",
+      "previous_sibling": "response_181_1587975842667"
+    },
+    {
+      "type": "standard",
+      "title": "busThanks",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks for Contributing. Have a nice day."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_151_1587975842662",
+      "dialog_node": "node_152_1587975842666"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What time do you open?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_125_1587975808112",
+      "event_name": "focus",
+      "dialog_node": "handler_127_1587975808112",
+      "previous_sibling": "handler_126_1587975808112"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_125_1587975808112",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_128_1587975808112",
+      "previous_sibling": "handler_127_1587975808112"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_125_1587975808112",
+      "context": {
+        "store_open_time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_126_1587975808112"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What is your business?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_137_1587975808112",
+      "event_name": "focus",
+      "dialog_node": "handler_139_1587975808112",
+      "previous_sibling": "handler_138_1587975808112"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_137_1587975808112",
+      "context": {
+        "store_type": "@store_type"
+      },
+      "conditions": "@store_type",
+      "event_name": "input",
+      "dialog_node": "handler_138_1587975808112"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Are you open on weekends?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_164_1587975842666",
+      "event_name": "focus",
+      "dialog_node": "handler_166_1587975842666",
+      "previous_sibling": "handler_165_1587975842666"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_164_1587975842666",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_167_1587975842666",
+      "previous_sibling": "handler_166_1587975842666"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_164_1587975842666",
+      "context": {
+        "occasion": "@store_close_dt"
+      },
+      "conditions": "@store_close_dt",
+      "event_name": "input",
+      "dialog_node": "handler_165_1587975842666"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_195_1587975870874",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_198_1587975870874",
+      "previous_sibling": "handler_197_1587975870874"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Are you open on weekends?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_195_1587975870874",
+      "event_name": "focus",
+      "dialog_node": "handler_197_1587975870874",
+      "previous_sibling": "handler_196_1587975870874"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_195_1587975870874",
+      "context": {
+        "occasion": "@store_close_dt"
+      },
+      "conditions": "@store_close_dt",
+      "event_name": "input",
+      "dialog_node": "handler_196_1587975870874"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Are you well stocked?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_26_1587970809625",
+      "event_name": "focus",
+      "dialog_node": "handler_28_1587970809625",
+      "previous_sibling": "handler_27_1587970809625"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_26_1587970809625",
+      "context": {
+        "stocked": "@stocked"
+      },
+      "conditions": "@stocked",
+      "event_name": "input",
+      "dialog_node": "handler_27_1587970809625"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Is your business open?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_2_1587967613186",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1587967613186",
+      "previous_sibling": "handler_3_1587967613186"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1587967613186",
+      "context": {
+        "store_open_en": "@store_open_en"
+      },
+      "conditions": "@store_open_en",
+      "event_name": "input",
+      "dialog_node": "handler_3_1587967613186"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Are they fresh?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_112_1587975788968",
+      "event_name": "focus",
+      "dialog_node": "handler_114_1587975788968",
+      "previous_sibling": "handler_113_1587975788968"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_112_1587975788968",
+      "context": {
+        "freshness": "@freshness"
+      },
+      "conditions": "@freshness",
+      "event_name": "input",
+      "dialog_node": "handler_113_1587975788968"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Which store did you visit?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_65_1587975337575",
+      "event_name": "focus",
+      "dialog_node": "handler_67_1587975337575",
+      "previous_sibling": "handler_66_1587975337575"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_65_1587975337575",
+      "context": {
+        "deliveryProvider": "@deliveryProvider"
+      },
+      "conditions": "@deliveryProvider",
+      "event_name": "input",
+      "dialog_node": "handler_66_1587975337575"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Are you well stocked?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_239_1587975892240",
+      "event_name": "focus",
+      "dialog_node": "handler_241_1587975892240",
+      "previous_sibling": "handler_240_1587975892240"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_239_1587975892240",
+      "context": {
+        "stocked": "@stocked"
+      },
+      "conditions": "@stocked",
+      "event_name": "input",
+      "dialog_node": "handler_240_1587975892240"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What items do you have in your store?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_233_1587975892240",
+      "event_name": "focus",
+      "dialog_node": "handler_235_1587975892240",
+      "previous_sibling": "handler_234_1587975892240"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_233_1587975892240",
+      "context": {
+        "store_items": "@store_items"
+      },
+      "conditions": "@store_items",
+      "event_name": "input",
+      "dialog_node": "handler_234_1587975892240"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1587970809622",
+      "variable": "$cusStoreVisitStart",
+      "dialog_node": "slot_5_1587970809625",
+      "previous_sibling": "slot_2_1587970809625"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1587970809622",
+      "variable": "$spacious",
+      "dialog_node": "slot_13_1587970809625",
+      "previous_sibling": "slot_9_1587970809625"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1587970809622",
+      "variable": "$stocked",
+      "dialog_node": "slot_26_1587970809625",
+      "previous_sibling": "slot_23_1587970809625"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1587970809622",
+      "event_name": "focus",
+      "dialog_node": "handler_29_1587970809625",
+      "previous_sibling": "response_30_1587970809625"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1587970809622",
+      "variable": "$store_type",
+      "dialog_node": "slot_17_1587970809625",
+      "previous_sibling": "slot_13_1587970809625"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1587970809622",
+      "variable": "$freshness",
+      "dialog_node": "slot_23_1587970809625",
+      "previous_sibling": "slot_20_1587970809625"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1587970809622",
+      "dialog_node": "response_30_1587970809625",
+      "previous_sibling": "node_9_1587974922231"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1587970809622",
+      "variable": "$store_name",
+      "dialog_node": "slot_2_1587970809625",
+      "previous_sibling": "handler_29_1587970809625"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1587970809622",
+      "variable": "$cusStoreVisitBack",
+      "dialog_node": "slot_9_1587970809625",
+      "previous_sibling": "slot_5_1587970809625"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1587970809622",
+      "variable": "$store_items",
+      "dialog_node": "slot_20_1587970809625",
+      "previous_sibling": "slot_17_1587970809625"
+    },
+    {
+      "type": "standard",
+      "title": "custThanks",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks for Contributing. Have a nice day."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1587970809622",
+      "dialog_node": "node_9_1587974922231"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_160_1587975842666",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_163_1587975842666",
+      "previous_sibling": "handler_162_1587975842666"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What time do you close?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_160_1587975842666",
+      "event_name": "focus",
+      "dialog_node": "handler_162_1587975842666",
+      "previous_sibling": "handler_161_1587975842666"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_160_1587975842666",
+      "context": {
+        "Store_close_time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_161_1587975842666"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Are they fresh?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_143_1587975808112",
+      "event_name": "focus",
+      "dialog_node": "handler_145_1587975808112",
+      "previous_sibling": "handler_144_1587975808112"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_143_1587975808112",
+      "context": {
+        "freshness": "@freshness"
+      },
+      "conditions": "@freshness",
+      "event_name": "input",
+      "dialog_node": "handler_144_1587975808112"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What is your business?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_168_1587975842666",
+      "event_name": "focus",
+      "dialog_node": "handler_170_1587975842666",
+      "previous_sibling": "handler_169_1587975842666"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_168_1587975842666",
+      "context": {
+        "store_type": "@store_type"
+      },
+      "conditions": "@store_type",
+      "event_name": "input",
+      "dialog_node": "handler_169_1587975842666"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What items do you have in your store?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_109_1587975788968",
+      "event_name": "focus",
+      "dialog_node": "handler_111_1587975788968",
+      "previous_sibling": "handler_110_1587975788968"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_109_1587975788968",
+      "context": {
+        "store_items": "@store_items"
+      },
+      "conditions": "@store_items",
+      "event_name": "input",
+      "dialog_node": "handler_110_1587975788968"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Which store did you visit?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_34_1587974103709",
+      "event_name": "focus",
+      "dialog_node": "handler_36_1587974103709",
+      "previous_sibling": "handler_35_1587974103709"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_34_1587974103709",
+      "context": {
+        "store_name": "@store_name"
+      },
+      "conditions": "@store_name",
+      "event_name": "input",
+      "dialog_node": "handler_35_1587974103709"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_13_1587970809625",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_16_1587970809625",
+      "previous_sibling": "handler_15_1587970809625"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "How is the rush? Is it spacious? Do they maintain social distancing?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_13_1587970809625",
+      "event_name": "focus",
+      "dialog_node": "handler_15_1587970809625",
+      "previous_sibling": "handler_14_1587970809625"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_13_1587970809625",
+      "context": {
+        "spacious": "@spacious"
+      },
+      "conditions": "@spacious",
+      "event_name": "input",
+      "dialog_node": "handler_14_1587970809625"
+    },
+    {
+      "type": "response_condition",
+      "parent": "node_8_1588053057171",
+      "conditions": "anything_else",
+      "dialog_node": "response_2_1588053134299",
+      "previous_sibling": "response_3_1588053132533"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<? $webhook_result_3.documents[0].name ?> is located at <? $webhook_result_3.documents[0].address ?> and is currently <? $webhook_result_3.documents[0].status ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1588053057171",
+      "conditions": "$webhook_result_3",
+      "dialog_node": "response_3_1588053132533"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What items does the store have??"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_20_1587970809625",
+      "event_name": "focus",
+      "dialog_node": "handler_22_1587970809625",
+      "previous_sibling": "handler_21_1587970809625"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_20_1587970809625",
+      "context": {
+        "store_items": "@store_items"
+      },
+      "conditions": "@store_items",
+      "event_name": "input",
+      "dialog_node": "handler_21_1587970809625"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1587967613186",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_8_1587967613186",
+      "previous_sibling": "handler_7_1587967613186"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What time do you open?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1587967613186",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1587967613186",
+      "previous_sibling": "handler_6_1587967613186"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1587967613186",
+      "context": {
+        "store_open_time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_6_1587967613186"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Are you well stocked?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_26_1587967613186",
+      "event_name": "focus",
+      "dialog_node": "handler_28_1587967613186",
+      "previous_sibling": "handler_27_1587967613186"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_26_1587967613186",
+      "context": {
+        "stocked": "@stocked"
+      },
+      "conditions": "@stocked",
+      "event_name": "input",
+      "dialog_node": "handler_27_1587967613186"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_218_1587975892240",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_221_1587975892240",
+      "previous_sibling": "handler_220_1587975892240"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What time do you open?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_218_1587975892240",
+      "event_name": "focus",
+      "dialog_node": "handler_220_1587975892240",
+      "previous_sibling": "handler_219_1587975892240"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_218_1587975892240",
+      "context": {
+        "store_open_time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_219_1587975892240"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_133_1587975808112",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_136_1587975808112",
+      "previous_sibling": "handler_135_1587975808112"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Are you open on weekends?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_133_1587975808112",
+      "event_name": "focus",
+      "dialog_node": "handler_135_1587975808112",
+      "previous_sibling": "handler_134_1587975808112"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_133_1587975808112",
+      "context": {
+        "occasion": "@store_close_dt"
+      },
+      "conditions": "@store_close_dt",
+      "event_name": "input",
+      "dialog_node": "handler_134_1587975808112"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What time do you want to go?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_37_1587974103709",
+      "event_name": "focus",
+      "dialog_node": "handler_39_1587974103709",
+      "previous_sibling": "handler_38_1587974103709"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_37_1587974103709",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_40_1587974103709",
+      "previous_sibling": "handler_39_1587974103709"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_37_1587974103709",
+      "context": {
+        "cusStoreVisitStart": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_38_1587974103709"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_68_1587975337575",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_71_1587975337575",
+      "previous_sibling": "handler_70_1587975337575"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What time do you want the delivery?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_68_1587975337575",
+      "event_name": "focus",
+      "dialog_node": "handler_70_1587975337575",
+      "previous_sibling": "handler_69_1587975337575"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_68_1587975337575",
+      "context": {
+        "cusStoreVisitStart": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_69_1587975337575"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Are you open on weekends?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1587962940407",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1587962940414",
+      "previous_sibling": "handler_4_1587962940414"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1587962940407",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_9_1587964675320",
+      "previous_sibling": "handler_8_1587962940414"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1587962940407",
+      "context": {
+        "occasion": "@store_close_dt"
+      },
+      "conditions": "@store_close_dt",
+      "event_name": "input",
+      "dialog_node": "handler_4_1587962940414"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_120_1587975808108",
+      "event_name": "focus",
+      "dialog_node": "handler_149_1587975808112",
+      "previous_sibling": "response_150_1587975808112"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_120_1587975808108",
+      "variable": "$occasion",
+      "dialog_node": "slot_133_1587975808112",
+      "previous_sibling": "slot_129_1587975808112"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_120_1587975808108",
+      "dialog_node": "response_150_1587975808112",
+      "previous_sibling": "node_121_1587975808112"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_120_1587975808108",
+      "variable": "$Store_close_time",
+      "dialog_node": "slot_129_1587975808112",
+      "previous_sibling": "slot_125_1587975808112"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_120_1587975808108",
+      "variable": "$store_items",
+      "dialog_node": "slot_140_1587975808112",
+      "previous_sibling": "slot_137_1587975808112"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_120_1587975808108",
+      "variable": "$stocked",
+      "dialog_node": "slot_146_1587975808112",
+      "previous_sibling": "slot_143_1587975808112"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_120_1587975808108",
+      "variable": "$store_type",
+      "dialog_node": "slot_137_1587975808112",
+      "previous_sibling": "slot_133_1587975808112"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_120_1587975808108",
+      "variable": "$store_open_en",
+      "dialog_node": "slot_122_1587975808112",
+      "previous_sibling": "handler_149_1587975808112"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_120_1587975808108",
+      "variable": "$store_open_time",
+      "dialog_node": "slot_125_1587975808112",
+      "previous_sibling": "slot_122_1587975808112"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_120_1587975808108",
+      "variable": "$freshness",
+      "dialog_node": "slot_143_1587975808112",
+      "previous_sibling": "slot_140_1587975808112"
+    },
+    {
+      "type": "standard",
+      "title": "covidThanks",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks for Contributing. Have a nice day."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_120_1587975808108",
+      "dialog_node": "node_121_1587975808112"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_64_1587975337572",
+      "variable": "$deliveryProvider",
+      "dialog_node": "slot_65_1587975337575",
+      "previous_sibling": "handler_86_1587975337575"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_64_1587975337572",
+      "variable": "$cusStoreVisitStart",
+      "dialog_node": "slot_68_1587975337575",
+      "previous_sibling": "slot_65_1587975337575"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_64_1587975337572",
+      "event_name": "focus",
+      "dialog_node": "handler_86_1587975337575",
+      "previous_sibling": "response_87_1587975337575"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_64_1587975337572",
+      "variable": "$cusStoreVisitBack",
+      "dialog_node": "slot_72_1587975337575",
+      "previous_sibling": "slot_68_1587975337575"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_64_1587975337572",
+      "dialog_node": "response_87_1587975337575"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Is your business open?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_122_1587975808112",
+      "event_name": "focus",
+      "dialog_node": "handler_124_1587975808112",
+      "previous_sibling": "handler_123_1587975808112"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_122_1587975808112",
+      "context": {
+        "store_open_en": "@store_open_en"
+      },
+      "conditions": "@store_open_en",
+      "event_name": "input",
+      "dialog_node": "handler_123_1587975808112"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_72_1587975337575",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_75_1587975337575",
+      "previous_sibling": "handler_74_1587975337575"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What date do you want the delivery?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_72_1587975337575",
+      "event_name": "focus",
+      "dialog_node": "handler_74_1587975337575",
+      "previous_sibling": "handler_73_1587975337575"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_72_1587975337575",
+      "context": {
+        "cusStoreVisitBack": "@sys-date"
+      },
+      "conditions": "@sys-date",
+      "event_name": "input",
+      "dialog_node": "handler_73_1587975337575"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Sorry to ask again, $name, but what store do you need?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1576084344160",
+      "conditions": "true",
+      "event_name": "nomatch",
+      "dialog_node": "handler_1_1576101371885",
+      "previous_sibling": "handler_8_1576101111774"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Thank you, $name."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1576084344160",
+      "conditions": "true",
+      "event_name": "filled",
+      "dialog_node": "handler_8_1576101111774",
+      "previous_sibling": "handler_1_1576084344168"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What store do you need?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1576084344160",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1576084344168",
+      "previous_sibling": "handler_3_1576084344168"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1576084344160",
+      "context": {
+        "occasion": "@occasion"
+      },
+      "conditions": "@occasion",
+      "event_name": "input",
+      "dialog_node": "handler_3_1576084344168"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Are they fresh?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_23_1587967613186",
+      "event_name": "focus",
+      "dialog_node": "handler_25_1587967613186",
+      "previous_sibling": "handler_24_1587967613186"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_23_1587967613186",
+      "context": {
+        "freshness": "@freshness"
+      },
+      "conditions": "@freshness",
+      "event_name": "input",
+      "dialog_node": "handler_24_1587967613186"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_33_1587974103706",
+      "variable": "$store_items",
+      "dialog_node": "slot_52_1587974103710",
+      "previous_sibling": "slot_41_1587974103709"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_33_1587974103706",
+      "variable": "$cusStoreVisitStart",
+      "dialog_node": "slot_37_1587974103709",
+      "previous_sibling": "slot_34_1587974103709"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_33_1587974103706",
+      "dialog_node": "response_62_1587974103710",
+      "previous_sibling": "node_8_1588053057171"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_33_1587974103706",
+      "event_name": "focus",
+      "dialog_node": "handler_61_1587974103710",
+      "previous_sibling": "response_62_1587974103710"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_33_1587974103706",
+      "variable": "$cusStoreVisitBack",
+      "dialog_node": "slot_41_1587974103709",
+      "previous_sibling": "slot_37_1587974103709"
+    },
+    {
+      "type": "standard",
+      "title": "custGetThanks",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks for Using our service. Have a nice day."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_33_1587974103706",
+      "dialog_node": "node_88_1587975499253",
+      "previous_sibling": "node_64_1587975337572"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_33_1587974103706",
+      "variable": "$store_name",
+      "dialog_node": "slot_34_1587974103709",
+      "previous_sibling": "handler_61_1587974103710"
+    },
+    {
+      "type": "standard",
+      "title": "Fetch Store Data",
+      "parent": "node_33_1587974103706",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "type": "store",
+            "action": "find",
+            "storename": "<? input_text ?>"
+          },
+          "result_variable": "webhook_result_3"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#location_info",
+      "dialog_node": "node_8_1588053057171",
+      "previous_sibling": "node_88_1587975499253"
+    },
+    {
+      "type": "slot",
+      "parent": "node_33_1587974103706",
+      "variable": "$customerDelivery",
+      "dialog_node": "slot_10_1587975232872",
+      "previous_sibling": "slot_52_1587974103710"
+    },
+    {
+      "type": "frame",
+      "title": "Customer Get Delivery",
+      "output": {},
+      "parent": "node_33_1587974103706",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#customerDelivery",
+      "dialog_node": "node_64_1587975337572"
+    },
+    {
+      "type": "standard",
+      "title": "Thank You",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You're welcome. Please let me know if you need anything else."
+              },
+              {
+                "text": "My pleasure."
+              },
+              {
+                "text": "No problem. Let me know if there is anything else I can help with."
+              },
+              {
+                "text": "I aim happy to help. 😊"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_6_1575163140992",
+      "conditions": "#thank_you",
+      "dialog_node": "node_1_1575165122483",
+      "previous_sibling": "node_9_1575163902052"
+    },
+    {
+      "type": "standard",
+      "title": "Goodbyes",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Nice talking to you today. We hope you visit our $city store."
+              },
+              {
+                "text": "Have a nice day."
+              },
+              {
+                "text": "Goodbye."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1575163140992",
+      "conditions": "#goodbyes",
+      "dialog_node": "node_3_1575165692216",
+      "previous_sibling": "node_1_1575165122483"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi there. How can I help you?"
+              },
+              {
+                "text": "Hello. How may I assist you today?"
+              },
+              {
+                "text": "Hi. What can I help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1575163140992",
+      "conditions": "#greetings",
+      "dialog_node": "node_9_1575163902052"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Are you open on weekends?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_13_1587967613186",
+      "event_name": "focus",
+      "dialog_node": "handler_15_1587967613186",
+      "previous_sibling": "handler_14_1587967613186"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_13_1587967613186",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_16_1587967613186",
+      "previous_sibling": "handler_15_1587967613186"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_13_1587967613186",
+      "context": {
+        "occasion": "@store_close_dt"
+      },
+      "conditions": "@store_close_dt",
+      "event_name": "input",
+      "dialog_node": "handler_14_1587967613186"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_213_1587975892236",
+      "variable": "$stocked",
+      "dialog_node": "slot_239_1587975892240",
+      "previous_sibling": "slot_236_1587975892240"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_213_1587975892236",
+      "variable": "$store_open_time",
+      "dialog_node": "slot_218_1587975892240",
+      "previous_sibling": "slot_215_1587975892240"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_213_1587975892236",
+      "variable": "$store_type",
+      "dialog_node": "slot_230_1587975892240",
+      "previous_sibling": "slot_226_1587975892240"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_213_1587975892236",
+      "variable": "$freshness",
+      "dialog_node": "slot_236_1587975892240",
+      "previous_sibling": "slot_233_1587975892240"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_213_1587975892236",
+      "variable": "$Store_close_time",
+      "dialog_node": "slot_222_1587975892240",
+      "previous_sibling": "slot_218_1587975892240"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_213_1587975892236",
+      "event_name": "focus",
+      "dialog_node": "handler_242_1587975892240",
+      "previous_sibling": "response_243_1587975892240"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_213_1587975892236",
+      "variable": "$store_open_en",
+      "dialog_node": "slot_215_1587975892240",
+      "previous_sibling": "handler_242_1587975892240"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_213_1587975892236",
+      "dialog_node": "response_243_1587975892240",
+      "previous_sibling": "node_214_1587975892240"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_213_1587975892236",
+      "variable": "$store_items",
+      "dialog_node": "slot_233_1587975892240",
+      "previous_sibling": "slot_230_1587975892240"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_213_1587975892236",
+      "variable": "$occasion",
+      "dialog_node": "slot_226_1587975892240",
+      "previous_sibling": "slot_222_1587975892240"
+    },
+    {
+      "type": "standard",
+      "title": "busThanks",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks for Contributing. Have a nice day."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_213_1587975892236",
+      "dialog_node": "node_214_1587975892240"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_2_1587962524159",
+      "variable": "$Store_close_time",
+      "dialog_node": "slot_1_1587962893136",
+      "previous_sibling": "slot_4_1587962822271"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_2_1587962524159",
+      "variable": "$occasion",
+      "dialog_node": "slot_3_1587962940407",
+      "previous_sibling": "slot_1_1587962893136"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_2_1587962524159",
+      "variable": "$store_open_time",
+      "dialog_node": "slot_4_1587962822271",
+      "previous_sibling": "slot_3_1587962524161"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1587962524159",
+      "variable": "$stocked",
+      "dialog_node": "slot_5_1587963052432",
+      "previous_sibling": "slot_8_1587963033840"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you your store has been updated."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1587962524159",
+      "conditions": "$webhook_result_1",
+      "dialog_node": "response_7_1587962524161",
+      "previous_sibling": "node_63_1587974966688"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1587962524159",
+      "variable": "$store_items",
+      "dialog_node": "slot_10_1587962992679",
+      "previous_sibling": "slot_9_1587962973653"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_2_1587962524159",
+      "variable": "$store_open_en",
+      "dialog_node": "slot_3_1587962524161",
+      "previous_sibling": "handler_6_1587962524161"
+    },
+    {
+      "type": "response_condition",
+      "parent": "node_2_1587962524159",
+      "conditions": "anything_else",
+      "dialog_node": "response_5_1588051805915",
+      "previous_sibling": "response_7_1587962524161"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1587962524159",
+      "variable": "$store_type",
+      "dialog_node": "slot_9_1587962973653",
+      "previous_sibling": "slot_3_1587962940407"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1587962524159",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1587962524161",
+      "previous_sibling": "response_5_1588051805915"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1587962524159",
+      "variable": "$freshness",
+      "dialog_node": "slot_8_1587963033840",
+      "previous_sibling": "slot_10_1587962992679"
+    },
+    {
+      "type": "standard",
+      "title": "businessThanks",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks for Contributing. Have a nice day."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1587962524159",
+      "dialog_node": "node_63_1587974966688"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What items do you want?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_52_1587974103710",
+      "event_name": "focus",
+      "dialog_node": "handler_54_1587974103710",
+      "previous_sibling": "handler_53_1587974103710"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_52_1587974103710",
+      "context": {
+        "store_items": "@store_items"
+      },
+      "conditions": "@store_items",
+      "event_name": "input",
+      "dialog_node": "handler_53_1587974103710"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What items do you have in your store?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1587962992679",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1587962992681",
+      "previous_sibling": "handler_8_1587962992681"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1587962992679",
+      "context": {
+        "store_items": "@store_items"
+      },
+      "conditions": "@store_items",
+      "event_name": "input",
+      "dialog_node": "handler_8_1587962992681"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What time did you go?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1587970809625",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1587970809625",
+      "previous_sibling": "handler_6_1587970809625"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1587970809625",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_8_1587970809625",
+      "previous_sibling": "handler_7_1587970809625"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1587970809625",
+      "context": {
+        "cusStoreVisitStart": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_6_1587970809625"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Is your business open?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_184_1587975870874",
+      "event_name": "focus",
+      "dialog_node": "handler_186_1587975870874",
+      "previous_sibling": "handler_185_1587975870874"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_184_1587975870874",
+      "context": {
+        "store_open_en": "@store_open_en"
+      },
+      "conditions": "@store_open_en",
+      "event_name": "input",
+      "dialog_node": "handler_185_1587975870874"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What is your business?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_106_1587975788968",
+      "event_name": "focus",
+      "dialog_node": "handler_108_1587975788968",
+      "previous_sibling": "handler_107_1587975788968"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_106_1587975788968",
+      "context": {
+        "store_type": "@store_type"
+      },
+      "conditions": "@store_type",
+      "event_name": "input",
+      "dialog_node": "handler_107_1587975788968"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What items do you have in your store?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_140_1587975808112",
+      "event_name": "focus",
+      "dialog_node": "handler_142_1587975808112",
+      "previous_sibling": "handler_141_1587975808112"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_140_1587975808112",
+      "context": {
+        "store_items": "@store_items"
+      },
+      "conditions": "@store_items",
+      "event_name": "input",
+      "dialog_node": "handler_141_1587975808112"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What is your business?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_17_1587967613186",
+      "event_name": "focus",
+      "dialog_node": "handler_19_1587967613186",
+      "previous_sibling": "handler_18_1587967613186"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_17_1587967613186",
+      "context": {
+        "store_type": "@store_type"
+      },
+      "conditions": "@store_type",
+      "event_name": "input",
+      "dialog_node": "handler_18_1587967613186"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_94_1587975788968",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_97_1587975788968",
+      "previous_sibling": "handler_96_1587975788968"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What time do you open?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_94_1587975788968",
+      "event_name": "focus",
+      "dialog_node": "handler_96_1587975788968",
+      "previous_sibling": "handler_95_1587975788968"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_94_1587975788968",
+      "context": {
+        "store_open_time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_95_1587975788968"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What type of store is it?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_17_1587970809625",
+      "event_name": "focus",
+      "dialog_node": "handler_19_1587970809625",
+      "previous_sibling": "handler_18_1587970809625"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_17_1587970809625",
+      "context": {
+        "store_type": "@store_type"
+      },
+      "conditions": "@store_type",
+      "event_name": "input",
+      "dialog_node": "handler_18_1587970809625"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What is your business?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_230_1587975892240",
+      "event_name": "focus",
+      "dialog_node": "handler_232_1587975892240",
+      "previous_sibling": "handler_231_1587975892240"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_230_1587975892240",
+      "context": {
+        "store_type": "@store_type"
+      },
+      "conditions": "@store_type",
+      "event_name": "input",
+      "dialog_node": "handler_231_1587975892240"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What time do you close?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_222_1587975892240",
+      "event_name": "focus",
+      "dialog_node": "handler_224_1587975892240",
+      "previous_sibling": "handler_223_1587975892240"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_222_1587975892240",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "event_name": "nomatch",
+      "dialog_node": "handler_225_1587975892240",
+      "previous_sibling": "handler_224_1587975892240"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_222_1587975892240",
+      "context": {
+        "Store_close_time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_223_1587975892240"
+    },
+    {
+      "type": "frame",
+      "title": "covidVulnerable",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#store_owner",
+      "dialog_node": "node_120_1587975808108",
+      "previous_sibling": "node_89_1587975788964"
+    },
+    {
+      "type": "frame",
+      "title": "Location Information",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#location_info",
+      "digress_in": "returns",
+      "dialog_node": "node_1_1576100284015",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_8_1575175126830",
+      "digress_out_slots": "allow_all"
+    },
+    {
+      "type": "frame",
+      "title": "Business",
+      "output": {},
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "action": "save",
+            "storename": "<? $name ?>"
+          },
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#store_owner",
+      "dialog_node": "node_2_1587962524159",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "frame",
+      "title": "Store Recommendations",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Store_recommendations",
+      "digress_in": "returns",
+      "dialog_node": "node_7_1576084301816",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_1_1587967613179",
+      "digress_out_slots": "allow_all"
+    },
+    {
+      "type": "frame",
+      "title": "Hours of Operation",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#hours_info",
+      "digress_in": "returns",
+      "dialog_node": "node_8_1575175126830",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_7_1576084301816",
+      "digress_out_slots": "allow_all"
+    },
+    {
+      "type": "folder",
+      "title": "Chitchat",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_6_1575163140992",
+      "previous_sibling": "node_182_1587975870870"
+    },
+    {
+      "type": "frame",
+      "title": "Register Business",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#store_owner",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_151_1587975842662",
+      "previous_sibling": "node_1_1576100284015"
+    },
+    {
+      "type": "frame",
+      "title": "Register Customer",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#store_owner",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_213_1587975892236",
+      "previous_sibling": "node_151_1587975842662"
+    },
+    {
+      "type": "standard",
+      "title": "Customer",
+      "metadata": {
+        "callout": {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "": ""
+          },
+          "result_variable": "webhook_result_2"
+        },
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#customer",
+      "dialog_node": "node_1_1587967613179",
+      "previous_sibling": "node_120_1587975808108"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              },
+              {
+                "text": "It looks like we are not quite getting each other today."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_6_1575163140992",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "frame",
+      "title": "Register DeliveryAssociate",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#store_owner",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_182_1587975870870",
+      "previous_sibling": "node_213_1587975892236"
+    },
+    {
+      "type": "frame",
+      "title": "DeliveryAssociate",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#store_owner",
+      "dialog_node": "node_89_1587975788964",
+      "previous_sibling": "node_2_1587962524159"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. My name is cOptimism and I'm a chatbot. What name can I call you by?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "tooling": {
+      "store_generic_responses": true
+    },
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "cOptimism-skill",
+  "language": "en",
+  "description": "Skill to help in Social Distancing/Quarantine."
+}
